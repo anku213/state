@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Table } from 'react-bootstrap'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>This is my first page.</h1>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>Sr.No</th>
+            <th>UserName</th>
+            <th>UserLastName</th>
+            <th>Email</th>
+            <th>MobileNo.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td>1</td>
+          <td>Anku</td>
+          <td>Singh</td>
+          <td>Singhanku67@gmail.com</td>
+          <td>9340660871</td>
+          </tr>
+          <tr>
+          <td>2</td>
+          <td>Prince</td>
+          <td>Singh</td>
+          <td>SinghPrince@gmail.com</td>
+          <td>6232299099</td>
+          </tr>
+          
+
+        </tbody>
+      </Table>
+    </>
   );
 }
+
 
 export default App;
